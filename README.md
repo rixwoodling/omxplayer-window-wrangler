@@ -1,2 +1,2 @@
-# omxplayer-window-wrangler
-wrangle that omxplayer window mode with ease!
+omxpocket
+pockets the omxplayer window in the corner of your screen easily!
