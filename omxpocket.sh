@@ -9,7 +9,7 @@ echo on the condition you share it!
 # needs omxplayer and xdpyinfo
 
 p=25    # percentage setting
-m=0     # margin setting
+m=50    # margin setting
 f=mp4   # file type 
 
 w=$(cat *.nfo | grep -e \<width\> | sed -e '/[ </width>]//g') | w=$((w / (100 / p)))
