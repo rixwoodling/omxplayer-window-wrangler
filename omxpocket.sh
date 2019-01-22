@@ -20,5 +20,5 @@ x1=$((x - w - m))
 y1=$((y - h - m))
 x2=$((x - m))
 y2=$((y - m))
-omxplayer -o hmdi --win "$x1,$y1,$w2,$h2" *.$f
+omxplayer -o hdmi --win "$x1,$y1,$w2,$h2" *.$f
 
