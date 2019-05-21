@@ -29,5 +29,5 @@ y1=$((y - h - m))
 x2=$((x - m))
 y2=$((y - m))
 # launch omxplayer with coordinets already worked out
-omxplayer -o hdmi --win "$x1,$y1,$w2,$h2" *.$f
+omxplayer -o hdmi --win "$x1,$y1,$x2,$y2" *.$f
 
