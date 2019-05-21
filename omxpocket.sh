@@ -24,10 +24,10 @@ h=$(exiftool -s3 -ImageHeight *.${f}) | h=$((h / (100/p)))
 x=$(xdpyinfo | grep dimensions | sed -e 's/x.*//' -e 's/[^0-9]*//g')
 y=$(xdpyinfo | grep dimensions | sed 's/[^x]*.//' | awk '{print $1}')
 # move scaled video down toward bottom-right of screen
-x1=$((x - w - m))
-y1=$((y - h - m))
-x2=$((x - m))
-y2=$((y - m))
+x1=$(${x} - ${w} - ${m})
+y1=$(${y} - ${h} - ${m})
+x2=$(${x} - ${m})
+y2=$(${y} - ${m})
 # launch omxplayer with coordinets already worked out
 omxplayer -o hdmi --win "$x1,$y1,$w2,$h2" *.$f
 
