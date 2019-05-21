@@ -13,9 +13,15 @@ echo ...
 # dependancies
 # omxplayer (required), xdpyinfo (required), and exiftool (optional)
 
-p=25    # set percentage of video to be scaled here
-m=50    # offset margin setting (plus or minus to margin)
-f=mp4   # file type 
+p=25  # set percentage of video to be scaled here
+m=50  # offset margin setting (plus or minus to margin)
+
+# assign mp4 or mkv filetype to variable 
+if [ -f ./*.mp4 ]; then
+  f=mp4
+else
+  f=mkv
+fi
 
 # gather video dimensions and scale down
 w=$(exiftool -s3 -ImageWidth *.${f})
