@@ -19,7 +19,7 @@ f=mp4   # file type
 
 # gather video dimensions and scale down
 w=$(exiftool -s3 -ImageWidth *.${f}) | w=$((w / (100 / p)))
-h=$(exiftool -s3 -ImageHeight *.${f})) | h=$((h / (100/p)))
+h=$(exiftool -s3 -ImageHeight *.${f}) | h=$((h / (100/p)))
 # gather monitor dimensions
 x=$(xdpyinfo | grep dimensions | sed -e 's/x.*//' -e 's/[^0-9]*//g')
 y=$(xdpyinfo | grep dimensions | sed 's/[^x]*.//' | awk '{print $1}')
